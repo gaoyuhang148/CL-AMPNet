@@ -1,0 +1,10 @@
+# Install the matching PyTorch CUDA/CPU wheel before this file (see README).
+torch==2.5.1
+torch-geometric==2.6.1
+transformers==4.46.3
+numpy==1.26.4
+scikit-learn==1.5.2
+scipy==1.14.1
+sentencepiece==0.2.0
+protobuf==5.29.3
+tqdm==4.67.1

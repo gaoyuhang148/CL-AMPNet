@@ -1,0 +1,31 @@
+{
+  "model": "CL-AMPNet",
+  "objective": "bidirectional_cross_view_label_multi_positive_mean_logprob_v1",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "training": {
+    "split_seed": 42,
+    "folds": 5,
+    "epochs": 15,
+    "batch_size": 32,
+    "contact_threshold": 0.5,
+    "lr": 0.0001,
+    "weight_decay": 1e-05,
+    "alpha": 0.1,
+    "temperature": 0.1
+  },
+  "features": {
+    "t5_model": "Rostlab/prot_t5_xl_uniref50",
+    "t5_revision": "973be27c52ee6474de9c945952a8008aeb2a1a73",
+    "esm_model": "facebook/esm2_t33_650M_UR50D",
+    "esm_revision": "08e4846e537177426273712802403f7ba8261b6c",
+    "t5_dtype": "float16",
+    "esm_dtype": "float32",
+    "transformers": "4.46.3"
+  }
+}

@@ -1,0 +1,7 @@
+* text=auto
+# Preserve bytes used by feature-cache and checkpoint checksums.
+*.py -text
+*.csv -text
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
